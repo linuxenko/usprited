@@ -13,18 +13,18 @@
 
 ### Features
 
- * ###### Automatically area detection capability.
+ * Automatically area detection capability.
 
-   Auto detection and partial detection of the sprites on images with any background
+     > Auto detection and partial detection of the sprites on images with any background
   color. Manual correction of the selected regions support.
 
- * ###### Sprite editor.
+ * Sprite editor.
 
-  Sprite highlighting, manually correct, clear sprites, naming and so on.
+     >  Sprite highlighting, manually correct, clear sprites, naming and so on.
 
- * ###### Retina 2x images support.
- * ###### Support of any image formats web browser support.
- * ###### Support popular export formats : CSS and JSON.
+ * Retina 2x images support.
+ * Support of any image formats web browser support.
+ * Support popular export formats : CSS and JSON.
 
 
 
