@@ -1,5 +1,5 @@
 
-
+[![](https://cdn.rawgit.com/linuxenko/linuxenko.github.io/master/showcase/usprited/logo.png)](https://cdn.rawgit.com/linuxenko/linuxenko.github.io/master/showcase/usprited/logo.png)
 
 ### About
 
@@ -8,6 +8,8 @@
  uSpritEd is a full featured sprite editor for web browser. Development were inspired
  by another sprite editors i often using. uSprited is a collection all the cool features
  from another sprite editors.
+
+[![](https://cdn.rawgit.com/linuxenko/linuxenko.github.io/master/showcase/usprited/demo.gif)](https://cdn.rawgit.com/linuxenko/linuxenko.github.io/master/showcase/usprited/demo.gif)
 
 ### Features
 
@@ -34,6 +36,6 @@
  Webpack as build tool.
 
 
- ### License
+### License
 
  MIT  (it's mine lol .. no license)
