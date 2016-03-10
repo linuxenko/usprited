@@ -1,0 +1,43 @@
+{
+  "name": "usprited",
+  "description": "HTML5 based full featured Sprite Editor with auto sprite detection capability, developed with point on performance and usability. Export formats is CSS and JSON.",
+  "version": "0.0.1",
+  "homepage": "http://github.com/linuxenko/usprited",
+  "author": {
+    "name": "Svetlana Linuxenko",
+    "email": "linuxenko@yahoo.com",
+    "url": "http://github.com/linuxenko/"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.1.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "font-awesome": "^4.5.0",
+    "hex-and-rgba": "^1.0.0",
+    "html-webpack-plugin": "^2.9.0",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.2",
+    "normalize.less": "^1.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "style-loader": "^0.13.0",
+    "uglify-loader": "^1.3.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.12.1",
+    "wolfy87-eventemitter": "^4.3.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": []
+  }
+}

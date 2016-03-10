@@ -1,0 +1,222 @@
+.toolbar-radius() {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.application-wrapper > .toolbar {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 60px;
+  box-shadow: 0px 0px 2px #000;
+  background: @toolbarColor;
+
+
+  &.hidden {
+
+    .body {
+      display: none;
+    }
+
+    .header span.close {
+      &:after {
+        content: '+';
+      }
+    }
+  }
+
+  .toolbar-radius();
+
+  .header {
+    .toolbar-radius();
+    background: #3A3A3A;
+    height: 20px;
+    position: relative;
+
+      span.movable {
+        cursor: move;
+        padding: 8px;
+
+        span {
+          display: inline-block;
+          padding: 2px;
+          background: @controlColor;
+          margin: 0px 1px;
+          border-radius: 10px;
+        }
+      }
+      span.close {
+        &:after {
+          content: '\00D7';
+          font-size: 16px;
+          font-family: Arial;
+          color: @controlColor;
+          height: 10px;
+          width: 10px;
+          text-align: center;
+          display: block;
+        }
+
+        float: right;
+        margin: 2px 5px;
+        cursor: pointer;
+      }
+  }
+}
+
+.application-wrapper > .toolbar > .body {
+  position: relative;
+  text-align: center;
+
+ .spacer {
+    width: 3px;
+    height: 3px;
+    border-left: 3px solid #333;
+    border-right: 3px solid #333;
+    display: inline-block;
+    margin: 8px 0px;
+  }
+
+  .tool-transparency {
+
+    div {
+      border-radius: 4px;
+      box-shadow: 0px 0px #444;
+      border: 1px solid rgba(0,0,0,0);
+      display: inline-block;
+      margin-left: 1px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+
+      &.active {
+        border-color: @activeColor;
+      }
+    }
+  }
+
+
+  .tool-colorpick {
+    div {
+      position: relative;
+      width: 38px;
+      height: 38px;
+      border-radius: 3px;
+      border: 1px solid #000;
+      box-shadow: -1px 0px 1px #333;
+      margin: 0px auto;
+      cursor: pointer;
+      margin-bottom: 8px;
+
+      span {
+        position: absolute;
+        display: block;
+        border: 1px solid #444;
+        width: 10px;
+        height: 10px;
+        bottom: 0px;
+        right: 0px;
+      }
+
+      &.active {
+        border-color: @activeColor;
+        cursor: crosshair;
+      }
+    }
+  }
+
+  .tool-doublify {
+    width: 38px;
+    height: 38px;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border-radius: 3px;
+    margin: 8px auto 0px auto;
+    line-height: 38px;
+    border: 1px solid @toolbarColor;
+    cursor: pointer;
+
+    &:hover {
+      border-color: @controlColor;
+    }
+
+    &.active {
+      border-color: @activeColor;
+      span {
+        color : @activeColor;
+      }
+    }
+
+    span {
+      font-size: 35px;
+      color: @controlColor;
+    }
+  }
+
+  .tool-detect {
+    width: 38px;
+    height: 38px;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border-radius: 3px;
+    margin: 8px auto 0px auto;
+    line-height: 38px;
+    border: 1px solid @toolbarColor;
+    cursor: pointer;
+
+    &:hover {
+      border-color: @controlColor;
+    }
+
+    &.active {
+      border-color: @activeColor;
+    }
+
+    span {
+      font-size: 28px;
+      color: @controlColor;
+    }
+  }
+
+  .tool-fileopen {
+
+    .input-file {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    width: 38px;
+    height: 38px;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border-radius: 3px;
+    margin: 8px auto 0px auto;
+    line-height: 38px;
+    border: 1px solid @toolbarColor;
+    cursor: pointer;
+
+    &:hover {
+      border-color: @controlColor;
+    }
+
+    &.active {
+      border-color: @activeColor;
+    }
+
+    span {
+      font-size: 28px;
+      color: @controlColor;
+    }
+  }
+}

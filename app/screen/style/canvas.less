@@ -1,0 +1,54 @@
+@rollerBorder: 1px dashed @controlColor;
+
+.canvas-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  canvas {
+     -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+     -moz-user-select: none; /* mozilla browsers */
+     -khtml-user-select: none; /* webkit (konqueror) browsers */
+     -ms-user-select: none; /* IE10+ */
+  }
+
+  .roller {
+    margin: auto;
+    position: relative;
+    padding-right: 30px;
+
+   &:after {
+      position: absolute;
+      top: -50px;
+      right: -1px;
+      height: 100%;
+      padding: 50px 0px;
+      content: ' ';
+      border-left: @rollerBorder;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0px;
+      right: -90px;
+      width: 100px;
+      height: 100%;
+      content: ' ';
+      border-bottom: @rollerBorder;
+      border-top: @rollerBorder;
+    }
+
+    em {
+      color: @controlColor;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      height: 100%;
+      right: -90px;
+      text-indent: 4px
+    }
+  }
+}

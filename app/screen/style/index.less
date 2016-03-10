@@ -1,0 +1,39 @@
+@import '~normalize.css/normalize.css';
+
+@import '~font-awesome/less/variables.less';
+@import '~font-awesome/less/mixins.less';
+@import '~font-awesome/less/icons.less';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src:  url('~font-awesome/fonts/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  font-family: 'FontAwesome';
+}
+
+html, body, .app, .application-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@controlColor : #B2B2B2;
+@appBackground : #262626;
+@toolbarColor : #535353;
+@activeColor : #E43BD8;
+
+.application-wrapper {
+  position: relative;
+  background: @appBackground;
+}
+
+
+
+@import './toolbar.less';
+@import './filedrop.less';
+@import './canvas.less';
+@import './preview.less';
