@@ -28,6 +28,22 @@
  Sprite detection mechanism based on [rextract.js](https://github.com/linuxenko/rextract.js).
  Webpack as build tool.
 
+##### Installation
+
+Webpack have to be installed, if not yet:
+
+```
+npm install webpack -g
+```
+
+Then clone repository and build it with running following commands inside: 
+
+```
+npm install
+webpack
+```
+
+It's all. Now "./dist" directory contains application.
 
 ### License
 
