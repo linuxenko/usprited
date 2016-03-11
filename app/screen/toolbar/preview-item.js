@@ -29,9 +29,26 @@ export default class PreviewItem extends React.Component {
 
   changeName(e) {
     e.preventDefault();
+    Handler.emit('screen-stopediting');
     this.setState({
       isEditing: true
     });
+
+    setTimeout(() => {
+      let input = document.getElementById('inline-editor');
+      if (input !== null) {
+        input.focus();
+        input.setSelectionRange(0, input.value.length);
+      }
+    }, 10);
+  }
+
+  unSelect(e) {
+    if (e.target.tagName !== 'INPUT' && e.target.className !== 'name') {
+      if (document.getElementById('inline-editor') !== null) {
+        Handler.emit('screen-stopediting');
+      }
+    }
   }
 
   setName(e) {
@@ -76,15 +93,15 @@ export default class PreviewItem extends React.Component {
   render() {
     let className = this.props.data.selected ? 'preview-item active' : 'preview-item';
     return (
-      <li className={className} onClick={this.itemClick.bind(this)} onDoubleClick={this.changeName.bind(this)}>
+      <li className={className} onDoubleClick={this.itemClick.bind(this)} onClick={this.unSelect.bind(this)}>
         <span className="count">{this.props.number}</span>
         {(() => {
           if (this.state.isEditing === true) {
-            return <input type="text" className="name-editing name"
+            return <input id="inline-editor" type="text" className="name-editing name"
                   onKeyPress={this.setName.bind(this)} onChange={this.setName.bind(this)}
                   defaultValue={this.props.data.name} focus/>
           } else {
-            return <span className="name">
+            return <span className="name" onClick={this.changeName.bind(this)}>
                       {this.props.data.name}
                     </span>
           }
