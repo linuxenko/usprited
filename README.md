@@ -49,6 +49,8 @@ Run webserver
 npm start
 ```
 
+Now you can open [http://localhost:8080/](http://localhost:8080/).
+
 
 It's all. Now "./dist" directory contains application.
 
