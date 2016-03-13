@@ -1,8 +1,7 @@
 import Drawer from './drawer/drawer';
 import Logo from 'screen/image/usprited.png';
 import Handler from 'usprited/handler';
-import Rextract from 'rextract/rextract';
-
+import Rextract from 'rextract.js';
 
 export default class CanvasHandler {
   constructor() {

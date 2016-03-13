@@ -6,6 +6,8 @@ import Handler from 'usprited/handler';
 
 import Icon from 'screen/image/icon.png';
 
+import * as RX from 'rextract.js';
+
 
 Handler.emit('application-onload');
 

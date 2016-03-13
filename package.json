@@ -1,7 +1,7 @@
 {
   "name": "usprited",
   "description": "HTML5 based full featured Sprite Editor with auto sprite detection capability, developed with point on performance and usability. Export formats is CSS and JSON.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "http://github.com/linuxenko/usprited",
   "author": {
     "name": "Svetlana Linuxenko",

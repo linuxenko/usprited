@@ -1,5 +1,6 @@
-import {RegionMap, Rect} from 'rextract/region';
+import {RegionMap, Rect} from 'rextract.js';
 import Handler from 'usprited/handler';
+
 
 export default class DataHandler extends RegionMap {
   constructor() {
