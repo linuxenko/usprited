@@ -40,8 +40,15 @@ Then clone repository and build it with running following commands inside:
 
 ```
 npm install
-webpack
+npm build
 ```
+
+Run webserver
+
+```
+npm start
+```
+
 
 It's all. Now "./dist" directory contains application.
 
