@@ -36,7 +36,7 @@ Webpack have to be installed, if not yet:
 npm install webpack -g
 ```
 
-Then clone repository and build it with running following commands inside: 
+Then clone repository and build it by running following commands: 
 
 ```
 npm install
