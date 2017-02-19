@@ -12,7 +12,7 @@ export default class Fileopen extends React.Component {
     return (
       <div className="tool-fileopen">
       <label htmlFor="input-file" className="input-label">
-        <input type="file" className="input-file"
+        <input type="file" className="input-file" multiple
             id="input-file" name="input-file"  accept="image/*"
             onChange={this.onChange.bind(this)}
             />
