@@ -3,7 +3,7 @@
 
 ### About
 
-  Try it with [online demo](http://www.linuxenko.pro/showcase/usprited/)
+  Try it with [online demo](http://linuxenko.github.io/showcase/usprited/)
 
  uSpritEd is a full featured sprite editor for web browser. Development were inspired
  by another sprite editors i often using. uSprited is a collection all the cool features
