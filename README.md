@@ -1,4 +1,4 @@
-[![Donate](https://img.shields.io/badge/donate-3$-green.svg?style=flat-square)](https://www.linuxenko.pro/donate.html#?amount=3)
+
 
 [![](https://cdn.rawgit.com/linuxenko/linuxenko.github.io/master/showcase/usprited/logo.png)](https://cdn.rawgit.com/linuxenko/linuxenko.github.io/master/showcase/usprited/logo.png)
 
